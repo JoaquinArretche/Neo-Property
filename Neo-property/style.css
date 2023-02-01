@@ -1,0 +1,503 @@
+@import url("https://fonts.googleapis.com/css2?family=Cedarville+Cursive&family=Fasthand&family=Island+Moments&family=Lora:ital@1&family=Poppins:ital,wght@0,100;0,300;0,600;0,800;1,200;1,600;1,700;1,800&family=Roboto&display=swap");
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Poppins", sans-serif;
+}
+
+html {
+  /* suaviza el scroll en anclas */
+  scroll-behavior: smooth;
+}
+
+:root {
+  --Blue: #4a90e2;
+  --Black: #000;
+  --White: #fff;
+  --Grey: #999999;
+}
+
+.center {
+  margin: 0 auto;
+  width: 70%;
+}
+
+a {
+  text-decoration: none;
+}
+
+/* NAVIGATION */
+
+header {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: center;
+  padding-top: 2rem;
+}
+
+nav ul {
+  display: flex;
+  text-align: center;
+  justify-content: center;
+  list-style: none;
+}
+
+nav ul li {
+  margin-top: 1rem;
+  margin-right: 1rem;
+  font-weight: bold;
+  color: #000;
+  transition: 0.2s;
+  text-transform: uppercase;
+}
+
+nav ul li:hover {
+  color: var(--Blue);
+}
+
+#section1 .container {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: center;
+  margin-top: 5rem;
+}
+
+#section1 img {
+  width: 500px;
+}
+
+#section1 .container div:nth-child(1) {
+  max-width: 25rem;
+  text-align: center;
+}
+
+#section1 .container div:nth-child(1) h1 {
+  font-size: 3rem;
+}
+
+#section1 .container div:nth-child(1) p {
+  font-size: 1.2rem;
+  margin-top: 3rem;
+  margin-bottom: 2rem;
+  color: #1d1d1d;
+}
+
+#section1 img {
+  width: 450px;
+}
+
+#section2 {
+  background-color: #4a91e28e;
+  display: flex;
+  flex-direction: column;
+  position: relative;
+  padding-bottom: 12rem;
+}
+
+#section2 h2 {
+  text-align: center;
+  font-size: 2rem;
+  padding: 5rem;
+}
+
+#section2 .container {
+  display: flex;
+  flex-direction: column;
+}
+
+#section2 .container figure {
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  padding: 1rem;
+  padding-bottom: 8rem;
+}
+
+#section2 .container figure img {
+  max-width: 200px;
+  max-height: 200px;
+  padding: 3rem;
+  opacity: 0.8;
+  align-items: center;
+}
+
+#section2 .container figure figcaption {
+  max-width: 400px;
+}
+
+#section2 .container figure figcaption h3 {
+  font-size: 1.5rem;
+  padding: 0.2rem;
+}
+
+#section2 .container figure figcaption p {
+  font-size: 1rem;
+}
+
+#section3 .container {
+  display: flex;
+  flex-direction: column;
+  margin-top: 5rem;
+  padding-bottom: 5rem;
+}
+
+#section3 .container h1 {
+  font-size: 2.5rem;
+  position: relative;
+}
+
+#section3 .container article {
+  display: flex;
+  margin-top: 5rem;
+}
+
+#section3 .container article div:nth-child(1) {
+  color: #4a90e2;
+  font-size: 2.5rem;
+  margin-right: 2rem;
+  font-weight: bolder;
+}
+
+#section3 .container article div:nth-child(2) h3 {
+  font-size: 1.25rem;
+  margin-bottom: 1rem;
+}
+
+#section4 {
+  background-color: #4a91e28e;
+  position: relative;
+}
+
+#section4 h1 {
+  font-size: 2.5rem;
+  padding-top: 10rem;
+  padding-bottom: 5rem;
+  text-align: center;
+}
+
+#section4 .container {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  padding-bottom: 5rem;
+}
+
+#section4 .container figure {
+  margin-top: 4rem;
+}
+
+#section4 .container figure img {
+  max-width: 200px;
+}
+
+#section4 .container figure figcaption {
+  max-width: 300px;
+}
+
+#section4 .container h3 {
+  font-size: 1.25rem;
+  margin: 1rem;
+}
+
+#section5 {
+  background-color: #4a91e28e;
+}
+
+#section5 .title {
+  text-align: center;
+  width: 100%;
+}
+
+#section5 .title h1 {
+  font-size: 2.5rem;
+  padding-top: 2rem;
+  text-align: center;
+  text-transform: uppercase;
+}
+
+#section5 .title p {
+  font-size: 1.5rem;
+  padding: 1rem;
+  color: whitesmoke;
+}
+
+.content {
+  display: flex;
+  flex-direction: column;
+}
+
+.neo-datos {
+  color: white;
+}
+.neo-datos h3 {
+  font-weight: 300;
+}
+
+.neo-datos article {
+  background: rgba(255, 255, 255, 0.2);
+  border-radius: 20px;
+  backdrop-filter: blur(5px);
+  -webkit-backdrop-filter: blur(5px);
+  border: 1px solid rgba(255, 255, 255, 0.3);
+  margin-bottom: 1rem;
+  text-align: center;
+  padding: 2rem;
+  max-width: 500px;
+  transition: 0.2s ease-in-out;
+}
+
+.neo-datos article:hover {
+  box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
+}
+
+.title {
+  margin-bottom: 1rem;
+}
+
+@media screen and (min-width: 768px) {
+  header {
+    flex-direction: row;
+  }
+  /* SECTION 1 */
+
+  #section1 {
+    height: 90vh;
+    display: flex;
+  }
+
+  #section1 img {
+    width: 500px;
+  }
+
+  #section1 .container {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+  }
+
+  #section1 .container div:nth-child(1) {
+    max-width: 25rem;
+    text-align: left;
+  }
+
+  #section1 .container div:nth-child(1) h1 {
+    font-size: 3.5rem;
+  }
+
+  #section1 .container div:nth-child(1) p {
+    font-size: 1.2rem;
+    margin-top: 3rem;
+    color: #1d1d1d;
+  }
+
+  #section2 .container {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+  }
+
+  #section3 .container {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    margin-top: 5rem;
+    justify-content: center;
+  }
+
+  .title {
+    width: 50vw;
+  }
+
+  .datos {
+    width: 50vw;
+  }
+
+  #section4 .container {
+    display: flex;
+    flex-direction: row;
+  }
+
+  #section4 .container figure {
+    margin-top: 0;
+    padding: 2rem;
+    padding-top: 0;
+  }
+
+  .content {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+  }
+
+  .neo-datos {
+    margin-top: 2rem;
+  }
+
+  #form {
+    width: 50%;
+  }
+}
+
+@media screen and (min-width: 992px) {
+}
+
+.custom-shape-divider-bottom-1670858110 {
+  position: absolute;
+  bottom: 0;
+  width: 100%;
+  overflow: hidden;
+  line-height: 0;
+  transform: rotate(180deg);
+}
+
+.custom-shape-divider-bottom-1670858110 svg {
+  display: block;
+  width: calc(124% + 1.3px);
+  height: 248px;
+}
+
+.custom-shape-divider-bottom-1670858110 .shape-fill {
+  fill: #ffffff;
+}
+
+.custom-shape-divider-top-1670866411 {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  overflow: hidden;
+  line-height: 0;
+  transform: rotate(180deg);
+}
+
+.custom-shape-divider-top-1670866411 svg {
+  position: relative;
+  display: block;
+  width: calc(122% + 1.3px);
+  height: 102px;
+}
+
+.custom-shape-divider-top-1670866411 .shape-fill {
+  fill: #ffffff;
+}
+
+.custom-shape-divider-bottom-1670877096 {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  overflow: hidden;
+  line-height: 0;
+}
+
+.custom-shape-divider-bottom-1670877096 svg {
+  position: relative;
+  display: block;
+  width: calc(156% + 1.3px);
+  height: 87px;
+}
+
+.custom-shape-divider-bottom-1670877096 .shape-fill {
+  fill: #4a91e28e;
+}
+
+#form {
+  margin-top: 2rem;
+}
+
+#form h1 {
+  padding: 2rem;
+  text-align: center;
+  width: 100%;
+}
+
+form {
+  margin-bottom: 200px;
+}
+
+/* -------------- #formularioUno ------------ */
+
+/* label input y textarea por defecto son de línea, quiero que estén solos
+en un renglón */
+#formularioUno label,
+#formularioUno input,
+#formularioUno textarea {
+  /* no permite compartir línea */
+  display: block;
+  /* forzar el ancho, lo entienden porq son bloques  */
+  /* le voy a decir 50 a input, 100 textarea */
+}
+
+#formularioUno input {
+  /* distancie de lo de abajo */
+  margin-bottom: 1.5rem;
+  /* ancho es de 50% */
+  width: 100%;
+  /* aire para que el contenido no quede pegado a los bordes, 8px */
+  padding: 0.8rem;
+  /* border */
+  border: 2px solid transparent;
+  /* fondo */
+  background: rgba(255, 255, 255, 0.2);
+  border-radius: 16px;
+  box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
+  backdrop-filter: blur(5px);
+  -webkit-backdrop-filter: blur(5px);
+  border: 1px solid rgba(255, 255, 255, 0.3);
+  border-radius: 20rem;
+}
+
+/* selector de atributo */
+#formularioUno input[type="submit"] {
+  margin-top: 1.5rem;
+  /* retoma ancho original */
+  width: auto;
+  /* width: 10%;
+    margin-left: 90%; */
+  background-color: #4a90e2;
+  color: white;
+  display: inline-block;
+  transition: 0.2s ease-in-out;
+}
+
+#formularioUno input[type="submit"]:hover {
+  background-color: #467fc0;
+}
+
+#formularioUno > div {
+  text-align: right;
+}
+
+#formularioUno textarea {
+  /* ancho es de 100% */
+  width: 100%;
+  /* si doy alto, no hay problema porque tienen scroll
+    por defecto */
+  height: 270px;
+  /* quitar la magia */
+  resize: none;
+  /* aire para que el contenido no quede pegado a los bordes, 8px */
+  padding: 1rem;
+  border: 2px solid transparent;
+  /* fondo */
+  background: rgba(255, 255, 255, 0.2);
+  border-radius: 16px;
+  box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
+  backdrop-filter: blur(5px);
+  -webkit-backdrop-filter: blur(5px);
+  border: 1px solid rgba(255, 255, 255, 0.3);
+}
+
+/* por defecto el focus hace aparece un outline */
+#formularioUno :focus {
+  outline: 0;
+  border-color: #4a90e2;
+}
